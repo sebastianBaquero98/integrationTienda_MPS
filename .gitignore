@@ -1,0 +1,5 @@
+.DS_Store
+integration.code-workspace
+envIntegration/
+src/authentication.py
+__pycache__
