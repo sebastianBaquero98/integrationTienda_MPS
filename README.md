@@ -12,6 +12,6 @@ La integración mantiene la tienda www.tiendaitelco.com con inventario al dia
 
  ## How to run?
  In the main file you will find 3 methods:
-    - runUpdate(): It is called every hour to update the products
-    - run Init(): It was called once, to create all the new products
-    - runTest(): It is used for testing some funcionalities
+   - runUpdate(): It is called every hour to update the products
+   - run Init(): It was called once, to create all the new products
+   - runTest(): It is used for testing some funcionalities
