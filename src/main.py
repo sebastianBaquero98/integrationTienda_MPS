@@ -173,7 +173,7 @@ def runInit():
         my_file.write(json.dumps(p))
     
 if __name__ == '__main__':
-    runInit()
+    runUpdate()
 
 """
  _____ _______ ______ __    _____ ____    _______ _____ 
