@@ -77,9 +77,23 @@ class Product:
             print(f'No se pudieron traer los productos gaming de MPS')
         else:
             print(f'Se trajeron los productos exitosamente')
-
         
         return req
+
+    def getProductBySku(self, sku):
+        self.headers['X-PARTNUM'] = sku
+        ans = 0
+        try:
+            req = requests.post(self.url, headers=self.headers).json()
+        except:
+            print(f'No se pudo traer el producto {sku}')
+        else:
+            print(f'Se pudo traer el producto {sku}')
+            if req['listaproductos']:
+                # Lista no vacia
+                ans = req['listaproductos'][0]
+            
+        return ans
     
    
     

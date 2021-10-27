@@ -1,0 +1,1080 @@
+﻿{
+	"Departamento": [
+ 	
+	{
+		"StateId": "05",
+		"Name": "ANT"
+	},
+	{
+		"StateId": "11",
+		"Name": "BOG"
+		
+	},
+	{
+		"StateId": "25",
+		"Name": "CUN"
+		
+	},
+	{
+		"StateId": "63",
+		"Name": "QUI"
+		
+	}
+],
+	"Cuidades": [
+
+	{
+            "StateId": "63",
+            "CountyId": "001",
+            "Name": "Armenia",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+	{
+            "StateId": "63",
+            "CountyId": "111",
+            "Name": "Buenavista",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+	{
+            "StateId": "63",
+            "CountyId": "130",
+            "Name": "Calarca",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+	{
+            "StateId": "63",
+            "CountyId": "190",
+            "Name": "Circasia",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+	 {
+            "StateId": "63",
+            "CountyId": "212",
+            "Name": "Cordoba",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+	{
+            "StateId": "63",
+            "CountyId": "272",
+            "Name": "Filandia",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "63",
+            "CountyId": "302",
+            "Name": "Genova",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "63",
+            "CountyId": "401",
+            "Name": "La tebaida",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "63",
+            "CountyId": "470",
+            "Name": "Montenegro",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "63",
+            "CountyId": "548",
+            "Name": "Pijao",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "63",
+            "CountyId": "594",
+            "Name": "Quimabaya",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "63",
+            "CountyId": "690",
+            "Name": "Salento",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+	{
+            "StateId": "11",
+            "CountyId": "001",
+            "Name": "Bogota",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "1",
+            "Name": "Usaquén",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "10",
+            "Name": "Engativá",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "11",
+            "Name": "Suba",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "12",
+            "Name": "Barrios Unidos",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "13",
+            "Name": "Teusaquillo",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "14",
+            "Name": "Los Mártires",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "15",
+            "Name": "Antonio Nariño",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "16",
+            "Name": "Puente Aranda",
+            "zonaLibreImpuestos": "0",
+            "Columna1": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "17",
+            "Name": "La Candelaria",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "18",
+            "Name": "Rafael Uribe Uribe",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "19",
+            "Name": "Ciudad Bolívar",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "2",
+            "Name": "Chapinero",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "20",
+            "Name": "Sumapaz",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "3",
+            "Name": "Santa Fe",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "4",
+            "Name": "San Cristóbal",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "5",
+            "Name": "Usme",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "6",
+            "Name": "Tunjuelito",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "7",
+            "Name": "Bosa",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "8",
+            "Name": "Kennedy",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "11",
+            "CountyId": "9",
+            "Name": "Fontibón",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+	{
+            "StateId": "05",
+            "CountyId": "001",
+            "Name": "MEDELLIN",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+	{
+            "StateId": "25",
+            "CountyId": "001",
+            "Name": "AGUA DE DIOS",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "019",
+            "Name": "ALBAN",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "035",
+            "Name": "ANAPOIMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "040",
+            "Name": "ANOLAIMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "053",
+            "Name": "ARBELAEZ",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "086",
+            "Name": "BELTRAN",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "095",
+            "Name": "BITUIMA",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "099",
+            "Name": "BOJACA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "120",
+            "Name": "CABRERA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "123",
+            "Name": "CACHIPAY",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "126",
+            "Name": "CAJICA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "148",
+            "Name": "CAPARRAPI",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "151",
+            "Name": "CAQUEZA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "154",
+            "Name": "CARMEN DE CARUPA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "168",
+            "Name": "CHAGUANI",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "175",
+            "Name": "CHIA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "178",
+            "Name": "CHIPAQUE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "181",
+            "Name": "CHOACHI",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "183",
+            "Name": "CHOCONTA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "200",
+            "Name": "COGUA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "214",
+            "Name": "COTA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "224",
+            "Name": "CUCUNUBA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "245",
+            "Name": "EL COLEGIO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "258",
+            "Name": "EL PEÑON",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "260",
+            "Name": "EL ROSAL",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "269",
+            "Name": "FACATATIVA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "279",
+            "Name": "FOMEQUE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "281",
+            "Name": "FOSCA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "286",
+            "Name": "FUNZA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "288",
+            "Name": "FUQUENE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "290",
+            "Name": "FUSAGASUGA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "293",
+            "Name": "GACHALA",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "295",
+            "Name": "GACHANCIPA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "297",
+            "Name": "GACHETA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "299",
+            "Name": "GAMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "307",
+            "Name": "GIRARDOT",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "312",
+            "Name": "GRANADA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "317",
+            "Name": "GUACHETA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "320",
+            "Name": "GUADUAS",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "322",
+            "Name": "GUASCA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "324",
+            "Name": "GUATAQUI",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "326",
+            "Name": "GUATAVITA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "328",
+            "Name": "GUAYABAL DE SIQUIMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "335",
+            "Name": "GUAYABETAL",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "339",
+            "Name": "GUTIERREZ",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "368",
+            "Name": "JERUSALEN",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "372",
+            "Name": "JUNIN",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "377",
+            "Name": "LA CALERA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "386",
+            "Name": "LA MESA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "394",
+            "Name": "LA PALMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "398",
+            "Name": "LA PEÑA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "402",
+            "Name": "LA VEGA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "407",
+            "Name": "LENGUAZAQUE",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "426",
+            "Name": "MACHETA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "430",
+            "Name": "MADRID",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "436",
+            "Name": "MANTA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "438",
+            "Name": "MEDINA",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "473",
+            "Name": "MOSQUERA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "483",
+            "Name": "NARIÑO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "486",
+            "Name": "NEMOCON",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "488",
+            "Name": "NILO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "489",
+            "Name": "NIMAIMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "491",
+            "Name": "NOCAIMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "506",
+            "Name": "VENECIA",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "513",
+            "Name": "PACHO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "518",
+            "Name": "PAIME",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "524",
+            "Name": "PANDI",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "530",
+            "Name": "PARATEBUENO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "535",
+            "Name": "PASCA",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "572",
+            "Name": "PUERTO SALGAR",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "580",
+            "Name": "PULI",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "592",
+            "Name": "QUEBRADANEGRA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "594",
+            "Name": "QUETAME",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "596",
+            "Name": "QUIPILE",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "599",
+            "Name": "APULO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "612",
+            "Name": "RICAURTE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "645",
+            "Name": "SAN ANTONIO DEL TEQUENDAMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "649",
+            "Name": "SAN BERNARDO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "653",
+            "Name": "SAN CAYETANO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "658",
+            "Name": "SAN FRANCISCO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "662",
+            "Name": "SAN JUAN DE RIO SECO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "718",
+            "Name": "SASAIMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "736",
+            "Name": "SESQUILE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "740",
+            "Name": "SIBATE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "743",
+            "Name": "SILVANIA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "745",
+            "Name": "SIMIJACA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "754",
+            "Name": "SOACHA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "758",
+            "Name": "SOPO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "769",
+            "Name": "SUBACHOQUE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "772",
+            "Name": "SUESCA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "777",
+            "Name": "SUPATA",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "779",
+            "Name": "SUSA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "781",
+            "Name": "SUTATAUSA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "785",
+            "Name": "TABIO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "793",
+            "Name": "TAUSA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "797",
+            "Name": "TENA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "799",
+            "Name": "TENJO",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "805",
+            "Name": "TIBACUY",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "807",
+            "Name": "TIBIRITA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "815",
+            "Name": "TOCAIMA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "817",
+            "Name": "TOCANCIPA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "823",
+            "Name": "TOPAIPI",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "839",
+            "Name": "UBALA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "841",
+            "Name": "UBAQUE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "843",
+            "Name": "UBATE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "845",
+            "Name": "UNE",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "851",
+            "Name": "UTICA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "862",
+            "Name": "VERGARA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "867",
+            "Name": "VIANI",
+            "zonaEspecial": "1",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "871",
+            "Name": "VILLAGOMEZ",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "873",
+            "Name": "VILLAPINZON",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "875",
+            "Name": "VILLETA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "878",
+            "Name": "VIOTA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "885",
+            "Name": "YACOPI",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "898",
+            "Name": "ZIPACON",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        },
+        {
+            "StateId": "25",
+            "CountyId": "899",
+            "Name": "ZIPAQUIRA",
+            "zonaEspecial": "0",
+            "zonaLibreImpuestos": "0"
+        }
+
+		
+
+ ]
+}
