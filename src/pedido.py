@@ -120,16 +120,28 @@ class Pedido():
         
         response = requests.request("POST", self.url, headers=self.headers, data=pedido).json()
         if response['Valor'] == 'FAIL':
-            print('El pedido {id} no se pudo crear')
-            logger.log_error(f'El pedido {id} no se pudo crear')
+            print('El batch de pedidos no se pudo crear')
+            logger.log_error(f'Los pedidos {orderIds} no se pudieron crear')
             logger.log_warning(json.dumps(response))
             logger.log_info("------------ Pedido ------------")
             logger.log_info(pedido)
         else:
-            print(f'El pedido {id} se creo exitosamente')
-            logger.log_success(f'El pedido {id} se creo exitosamente - [{response["Pedido"]}]')
+            print(f'Los pedidos {orderIds} se crearon exitosamente')
+            logger.log_success(f'Los pedidos {orderIds} se crearon exitosamente - PEDIDO MPS: [{response["Pedido"]}]')
             logger.log_info("------------ Pedido ------------")
             logger.log_info(pedido)
+            dataU = {
+                "status": "completed"
+            }
+            
+            for id in orderIds:
+                try:
+                    self.apiWoo.put("orders/"+str(id),dataU)
+                except:
+                    print(f'No se actualizo el order {id}')
+                else:
+                    print(f'Se actualizo el order {id}')
+            
 
     def runPedido(self):
         """ Corre todo el archivo de pedido
@@ -139,8 +151,6 @@ class Pedido():
         ordersMps = []
         orderIds = []
         
-        productosCompletos = True
-        count = 0
         for order in orders['orders']:
             productosCompletos = True
             # Pedido que ya quedo pago
@@ -155,7 +165,7 @@ class Pedido():
                 orderDetail["ClienteEntrega"] = "1032497700"
                 orderDetail["TelefonoEntrega"] = order['billing_address']['phone']
                 orderDetail["DireccionEntrega"] = order['shipping_address']['address_1']
-                orderDetail["Observaciones"] = ""
+                orderDetail["Observaciones"] = order['shipping_address']['address_1']
                 stateName = order['shipping_address']['state']
                 countyName = order['shipping_address']['city']
                 countyId,stateId = self.findStateCountyId(countyName,stateName)
@@ -173,6 +183,7 @@ class Pedido():
                         logger = Logger(False)
                         logger.log_error(f"Producto {productInOrder['sku']} sin inventario por eso no se realizo el pedido {order['order_number']}")
                     else:
+                        orderIds.append(order['order_number'])
                         product = {}
                         product['PartNum'] = productInOrder['sku']
                         product['Producto'] = productInOrder['name']
@@ -185,9 +196,8 @@ class Pedido():
 
                 if productosCompletos:
                     orderDetail['listaPedidoDetalle'] = productDetail
-                count+=1
-            ordersMps.append(orderDetail)
-
+                    ordersMps.append(orderDetail)
+                
         print(ordersMps)
         #self.realizarPedido(ordersMps,orderIds)
             
