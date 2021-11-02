@@ -63,7 +63,8 @@ class Pedido():
             print("No se pudo traer meta orders")
         else:
             print("Si se pudo traer meta orders")
-            print(metaOrders)
+
+        return metaOrders
 
     def findStateCountyId(self, county, state):
         """ El metodo busca los ids del estado 
@@ -114,6 +115,22 @@ class Pedido():
 
         return (req)
 
+    def findMetaOrder(self, orderId):
+        """ El metodo encuentra la meta data del pedido
+
+        Args:
+            orderId (String): El order id del pedido
+        """
+        orderMeta = self.retrieveMetaOrders()
+        ordersMeta = orderMeta['orders']
+        ans = {}
+        for metaOrder in ordersMeta:
+            if metaOrder['order_number'] == orderId:
+                # Encontre la meta data del pedido
+                ans = metaOrder
+        return ans
+
+
     def realizarPedido(self, pedidoMPS, orderIds):
         """ Genera el pedido en Woocmerce
 
@@ -125,22 +142,23 @@ class Pedido():
         pedido = {"listaPedido":pedidoMPS}
         pedido = json.dumps(pedido)
         
+    
         
         response = requests.request("POST", self.url, headers=self.headers, data=pedido).json()
         
         if response[0]['valor'] == 'FAIL':
-            logger = Logger(False)
+            lFallidos = Logger(False)
             print('El batch de pedidos no se pudo crear')
-            logger.log_error(f'Los pedidos {orderIds} no se pudieron crear')
-            logger.log_warning(json.dumps(response))
-            logger.log_info("------------ Pedido ------------")
-            logger.log_info(pedido)
+            lFallidos.log_error(f'Los pedidos {orderIds} no se pudieron crear')
+            lFallidos.log_warning(json.dumps(response))
+            lFallidos.log_info("------------ Pedido ------------")
+            lFallidos.log_info(pedido)
         else:
-            logger = Logger(True)
+            lExito = Logger(True)
             print(f'Los pedidos {orderIds} se crearon exitosamente')
-            logger.log_info(f'Los pedidos {orderIds} se crearon exitosamente - PEDIDO MPS: {response[0]["pedido"]}')
-            logger.log_info("------------ Pedido ------------")
-            logger.log_info(pedido)
+            lExito.log_info(f'Los pedidos {orderIds} se crearon exitosamente - PEDIDO MPS: {response[0]["pedido"]}')
+            lExito.log_info("------------ Pedido ------------")
+            lExito.log_info(pedido)
             dataU = {
                 "status": "completed"
             }
@@ -152,7 +170,7 @@ class Pedido():
                     print(f'No se actualizo el order {id}')
                 else:
                     print(f'Se actualizo el order {id}')
-            
+    
 
     def runPedido(self):
         """ Corre todo el archivo de pedido
@@ -161,20 +179,22 @@ class Pedido():
         orders = self.retrieveOrders()
         ordersMps = []
         orderIds = []
-        
+    
         for order in orders['orders']:
             productosCompletos = True
             # Pedido que ya quedo pago
             if order['status'] == 'processing':
+                orderMeta = self.findMetaOrder(order['order_number'])
+                print(orderMeta)
                 orderIds.append(order['order_number'])
                 orderDetail = {}
                 productDetail = []
                 orderDetail["AccountNum"] = 830040420
                 orderDetail["NombreClienteEntrega"] = order['billing_address']['first_name']+" "+ order['billing_address']['last_name']
-                orderDetail["ClienteEntrega"] = "1032497700"
+                orderDetail["ClienteEntrega"] = orderMeta['product_meta']['billing_person_id']
                 orderDetail["TelefonoEntrega"] = order['billing_address']['phone']
                 orderDetail["DireccionEntrega"] = order['shipping_address']['address_1']
-                orderDetail["Observaciones"] = order['shipping_address']['address_1']
+                orderDetail["Observaciones"] = order['shipping_address']['address_2']
                 stateName = order['shipping_address']['state']
                 countyName = order['shipping_address']['city']
                 countyId,stateId = self.findStateCountyId(countyName,stateName)
@@ -209,7 +229,7 @@ class Pedido():
                     orderDetail['listaPedidoDetalle'] = productDetail
                     ordersMps.append(orderDetail)
                 
-        #print(orderIds)
+        print(ordersMps)
         self.realizarPedido(ordersMps,orderIds)
             
 

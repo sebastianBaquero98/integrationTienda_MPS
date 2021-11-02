@@ -1,1 +1,0 @@
-ERROR:root:Producto 711719540892 sin inventario por eso no se realizo el pedido 36471
