@@ -1,0 +1,10 @@
+ERROR:root:Producto NP.MCE11.00G sin inventario por eso no se realizo el pedido 36473
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): shopcommerce.mps.com.co:8081
+DEBUG:urllib3.connectionpool:https://shopcommerce.mps.com.co:8081 "POST /api/Webapi/VerCatalogo HTTP/1.1" 200 6817
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): shopcommerce.mps.com.co:8081
+DEBUG:urllib3.connectionpool:https://shopcommerce.mps.com.co:8081 "POST /api/Webapi/VerCatalogo HTTP/1.1" 200 3408
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): shopcommerce.mps.com.co:8081
+DEBUG:urllib3.connectionpool:https://shopcommerce.mps.com.co:8081 "POST /api/Webapi/VerCatalogo HTTP/1.1" 200 8947
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): shopcommerce.mps.com.co:8081
+DEBUG:urllib3.connectionpool:https://shopcommerce.mps.com.co:8081 "POST /api/Webapi/VerCatalogo HTTP/1.1" 200 181
+ERROR:root:Producto 711719540892 sin inventario por eso no se realizo el pedido 36471

@@ -19,6 +19,11 @@ class Pedido():
         self.accessTokenMPS = Authentication.getAccessTokenMPS()
         self.accessTokenWoo = Authentication.getAccessTokenWoo()
         self.mpsProductManager = MPSProduct()
+        self.headers = {
+            'Cache-Control': 'no-cache',
+            'Content-Type': 'application/json',
+            'Authorization':'Bearer '+self.accessTokenMPS
+        }
         self.pedidoMPS = {
            "listaPedido":[
                {
@@ -78,13 +83,17 @@ class Pedido():
         ciudades = cyd['Cuidades']
         stateId = -1
         countyId = -1
-        for dep in departamentos:
-            if dep['Name'] == state:
-                stateId = dep['StateId']
+        if county == 'BOG':
+            stateId = '11'
+            countyId = '001'
+        else:
+            for dep in departamentos:
+                if dep['Name'] == state:
+                    stateId = dep['StateId']
 
-        for ciudad in ciudades:
-            if ciudad['Name'].lower() == county.lower() and ciudad['StateId'] ==  stateId:
-                countyId = ciudad['CountyId']
+            for ciudad in ciudades:
+                if ciudad['Name'].lower() == county.lower() and ciudad['StateId'] ==  stateId:
+                    countyId = ciudad['CountyId']
 
         return countyId,stateId
 
@@ -113,21 +122,23 @@ class Pedido():
             orderDetail (Dict): Es un diccionario con los detalles del pedido
             orderIds (Array[int]): Son los ids de los pedido de Woocommerce
         """
-        logger = Logger(True)
         pedido = {"listaPedido":pedidoMPS}
         pedido = json.dumps(pedido)
-        print(pedido)
+        
         
         response = requests.request("POST", self.url, headers=self.headers, data=pedido).json()
-        if response['Valor'] == 'FAIL':
+        
+        if response[0]['valor'] == 'FAIL':
+            logger = Logger(False)
             print('El batch de pedidos no se pudo crear')
             logger.log_error(f'Los pedidos {orderIds} no se pudieron crear')
             logger.log_warning(json.dumps(response))
             logger.log_info("------------ Pedido ------------")
             logger.log_info(pedido)
         else:
+            logger = Logger(True)
             print(f'Los pedidos {orderIds} se crearon exitosamente')
-            logger.log_success(f'Los pedidos {orderIds} se crearon exitosamente - PEDIDO MPS: [{response["Pedido"]}]')
+            logger.log_info(f'Los pedidos {orderIds} se crearon exitosamente - PEDIDO MPS: {response[0]["pedido"]}')
             logger.log_info("------------ Pedido ------------")
             logger.log_info(pedido)
             dataU = {
@@ -155,12 +166,10 @@ class Pedido():
             productosCompletos = True
             # Pedido que ya quedo pago
             if order['status'] == 'processing':
-                #print(count)
-                #print(order)
+                orderIds.append(order['order_number'])
                 orderDetail = {}
                 productDetail = []
-                orderIds.append(order['order_number'])
-                orderDetail["AccountNum"] = 83040420
+                orderDetail["AccountNum"] = 830040420
                 orderDetail["NombreClienteEntrega"] = order['billing_address']['first_name']+" "+ order['billing_address']['last_name']
                 orderDetail["ClienteEntrega"] = "1032497700"
                 orderDetail["TelefonoEntrega"] = order['billing_address']['phone']
@@ -169,8 +178,8 @@ class Pedido():
                 stateName = order['shipping_address']['state']
                 countyName = order['shipping_address']['city']
                 countyId,stateId = self.findStateCountyId(countyName,stateName)
-                orderDetail["StateId"] = stateId
-                orderDetail["CountyId"] = countyId
+                orderDetail["StateId"] = countyId
+                orderDetail["CountyId"] = stateId
                 orderDetail["RecogerEnSitio"] = 0
                 orderDetail["EntregaUsuarioFinal"] = 1
             
@@ -182,8 +191,10 @@ class Pedido():
                         productosCompletos = False
                         logger = Logger(False)
                         logger.log_error(f"Producto {productInOrder['sku']} sin inventario por eso no se realizo el pedido {order['order_number']}")
+                        if order['order_number'] in orderIds:
+                            orderIds.remove(order['order_number'])
+                        
                     else:
-                        orderIds.append(order['order_number'])
                         product = {}
                         product['PartNum'] = productInOrder['sku']
                         product['Producto'] = productInOrder['name']
@@ -198,8 +209,8 @@ class Pedido():
                     orderDetail['listaPedidoDetalle'] = productDetail
                     ordersMps.append(orderDetail)
                 
-        print(ordersMps)
-        #self.realizarPedido(ordersMps,orderIds)
+        #print(orderIds)
+        self.realizarPedido(ordersMps,orderIds)
             
 
 
