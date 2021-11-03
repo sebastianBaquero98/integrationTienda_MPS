@@ -81,13 +81,19 @@ def runUpdate():
         """
         if mpsProduct['Sku'].strip() not in productsWC.keys():
             print("Entro Caso 3")
-            productoNuevo = WOOProductManager.create(mpsProduct)
-            idNuevo = productoNuevo['id']
-            productsWC[mpsProduct['Sku']] = idNuevo
+            try:
+                productoNuevo = WOOProductManager.create(mpsProduct)
+                idNuevo = productoNuevo['id']
+                productsWC[mpsProduct['Sku']] = idNuevo
+            except:
+                print('Fallo')
+                continue
+        
 
     # El archivo se creara con los nuevos productos
     with open("/Users/user/OneDrive - Universidad de los Andes/Tienda Itelco/MpsWoocommerceIntegration/src/static/listaIds.txt", mode= "w", encoding="utf-8") as my_file:
         my_file.write(json.dumps(productsWC))
+        print('Escribio Archivo')
                 
 def runTest():
 

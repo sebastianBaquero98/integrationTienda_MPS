@@ -190,15 +190,11 @@ class Product:
                         img.append(temp)
 
                 self.product['images'] = img
-
-        result = ""
         
-        try:
-            result = self.api.post("products", self.product).json()
-        except:
-            print(f'Producto {mpsProduct["PartNum"]} creado sin exito')
-        else:
-            print(f'Producto {mpsProduct["PartNum"]} creado exitosamente')
+        
+        result = self.api.post("products", self.product).json()
+        print(f'Wooproduct manager {result}')
+       
             
         return result
 
@@ -330,7 +326,7 @@ if __name__ == '__main__':
     #print(type(r))
     #r = productManager.getAll()
     #print(r)
-    productManager.deleteAll()
+    #productManager.deleteAll()
     #r = productManager.getXId(34668)
     p = {
         "PartNum": "ABCDEF",
@@ -369,3 +365,4 @@ if __name__ == '__main__':
             }
         ]
     }
+    
